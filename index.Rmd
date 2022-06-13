@@ -1,0 +1,22 @@
+---
+title: ""
+output: html_document
+---
+
+Welcome!
+
+I am currently a Ph.D. candidate in the Department of Political Science at the University of Pittsburgh.
+
+Please visit [my website](https://www.eunyoungkim.net/) for more about my research!
+
+I can be contacted at euk27@pitt.edu
+
+You can download my [CV](https://drive.google.com/file/d/1AyNaGW4o_irQkLp7vs0fMRYOBw11GLIa/view?usp=sharing) here.
+
+
+
+
+
+
+
+
