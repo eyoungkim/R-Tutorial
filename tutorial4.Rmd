@@ -1,0 +1,56 @@
+---
+title: "Structural Topic Modeling in R"
+output: html_document
+---
+R **stm** package allows us to
+More information about **stm** package can be found in the [vignette](https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf)
+and [www.structuraltopicmodel.com](https://www.structuraltopicmodel.com/).
+
+### Required packages
+
+```{r, results="hide", warning=FALSE, message=FALSE}
+library(tm)
+library(stm)
+```
+
+I am using 10 documents in txt format. 10 documents are located in a folder called brochures.
+
+```{r}
+mylocation <- "~/Dropbox/CSS/Rwebsite/website_in_R/twitter"
+# mylocation <- "YOUR FOLDER PATH"
+```
+
+```{r}
+mytm <- VCorpus(DirSource(mylocation))
+```
+
+```{r}
+dtm <- DocumentTermMatrix(mytm, 
+                          control = list(removePunctuation=T,
+                                         removeNumbers=T,
+                                         wordLengths=c(2,4),
+                                         weighting=weightBin))
+```
+
+
+
+```{r}
+inspect(dtm)
+dim(dtm)
+dtm.matrix <- as.matrix(dtm)
+dtm.df = as.data.frame(dtm.matrix)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
